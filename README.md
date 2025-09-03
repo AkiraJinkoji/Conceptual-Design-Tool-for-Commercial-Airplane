@@ -99,7 +99,7 @@ Matlab_code/                          # Main source code folder
 - **Payload/crew weights**  
 - **Iterations**: maximum allowed  
 
-⚠️ *Phase names must be spelled correctly for the tool to work.*
+Note: *Phase names must be spelled correctly for the tool to work.*
 
 ### Outputs
 - Numerical results in MATLAB command window:
