@@ -1,0 +1,33 @@
+%% To do
+% Input of altitude -> take the altitude of the phase before
+
+function [v,q,n,alt_f,mach,Wf2Wi] = horizontal_acceleration(alt_i,v_i, v_f, time, range)
+    
+%UNTITLED2 Summary of this function goes here
+    %{
+    Input
+        alt_i - (feet)
+        range - (feet)
+        time - (sec)
+        v_i - (ft/s)
+        v_i - (ft/s)
+    Output 
+        V - (ft/s)
+        q - (feet)
+        n - (sec)
+        alt_f - (feet)
+        mach - (no dim)
+        Wf2Wi - (no dim)
+    %}
+    % parmaters extracted by the air conditions
+    [T,P, rho, V_air, delta, theta, sigma] = air_condition(alt_i);
+    
+    % n : Lift approximately equals Weight
+    n = 1;
+
+    
+
+
+    
+
+    

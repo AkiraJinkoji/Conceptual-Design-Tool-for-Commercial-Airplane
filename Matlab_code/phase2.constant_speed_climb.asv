@@ -1,0 +1,69 @@
+%% To do
+% Input of altitude -> take the altitude of the phase before
+
+function [v,dv,q,n,dh, alpha,CD0,alt_f, Wf2Wi] = constant_speed_climb(alt_i, alt_f, climb_rate, speed, mach_f)
+    
+%UNTITLED2 Summary of this function goes here
+    %{
+    Input
+        alt_i - (feet)
+        range - (feet)
+        time - (sec)
+        v_i - (ft/s)
+        v_i - (ft/s)
+    Output 
+        V - (ft/s)
+        q - (feet)
+        n - (sec)
+        alt_f - (feet)
+        mach - (no dim)
+        Wf2Wi - (no dim)
+    %}
+    % parmaters extracted by the air conditions - approximate the altitude by its means
+    [T,P, rho,v_air, delta, theta, sigma] = air_condition((alt_i+alt_f)/2);
+    
+    % Calculate Mach number if speed is given, else calculate speed from Mach number
+    if isempty(speed)
+        if isempty(mach)
+            warning('need speed or mach number as input');
+        else
+            % If speed is not given
+            v = mach * v_air; % Calculate speed from Mach
+        end
+    else
+        % If speed is given, calculate Mach from speed
+        v = speed; % Use given speed
+        mach = v / V_air; % Calculate Mach number from speed
+    end
+
+    % dv: approximation, constante acceleration
+    dv = 0;
+
+    % q
+    q = 0.5 * rho * v^2;
+
+    % n : Lift approximately equals Weight
+    n = 1;
+
+    % dh, climb rate
+    dh = climb_rate;
+
+    % alt_f
+    alt_f = alt_f;
+
+    % mach : approximate to its mean
+    mach = v / v_air; % Calculate Mach number from speed
+
+    % alpha, lapse rate
+    alpha = calculate_alpha(mach, sigma);
+
+    % CD0, drag coefficient for 0 lift
+    CD0 = calculate_CD0(mach,alt_i);   
+
+    % weight fraction
+    
+
+end 
+    
+
+    
