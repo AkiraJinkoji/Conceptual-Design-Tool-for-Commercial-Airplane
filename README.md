@@ -35,7 +35,8 @@ The tool works through two coupled analyses:
 ---
 
 ## 4. Repository Map (How to Use)
-'''
+<pre>
+
 Matlab_code/                          # Main source code folder
 ├── Input.m                           # Entry point – define mission, constraints, parameters
 ├── MissionProfile.m                  # Class to define mission phases and parameters
@@ -74,7 +75,7 @@ Matlab_code/                          # Main source code folder
 │   ├── phase_takeoff2_high_thrust.m
 │   └── phase_taxi_inout.m
 └── inverse_air_condition.m           # Inverse atmospheric lookup
-'''
+</pre>
 
 ### Running the Tool
 1. Unzip `Matlab_programs_to_submit`.  
