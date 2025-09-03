@@ -5,6 +5,8 @@ This project develops a **conceptual design tool** for **fixed-wing commercial a
 
 As a benchmark, the **Airbus A320neo** is used to validate the approach. While results deviate from real-world data due to simplified assumptions, the tool successfully demonstrates how conceptual design decisions can be automated and iteratively refined.
 
+For detailed methodology, assumptions, and results, please refer to the full project report:  
+[Aircraft Design Project Report](Aircaft_Design_Project_Report.pdf)
 ---
 
 ## 2. Problem Description
