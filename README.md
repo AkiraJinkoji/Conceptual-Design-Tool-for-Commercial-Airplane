@@ -1,7 +1,7 @@
 # Conceptual-Design-Tool-for-Commercial-Airplane
 
 ## 1. Context / Introduction
-This project develops a **conceptual design tool** for **fixed-wing commercial aircraft**. The tool implements a **Sizing and Synthesis framework**, coupling **mission analysis** and **constraint analysis** to generate key design parameters and visualize tradeoffs in performance.  
+This project develops a **conceptual design tool** for **fixed-wing commercial aircraft**. The tool implements a **Sizing and Synthesis framework**, coupling **mission analysis** and **constraint analysis** to generate key design parameters and visualize tradeoffs in performance.  It was completed in the context of **AE6343 - Aircraft Design 1**.
 
 As a benchmark, the **Airbus A320neo** is used to validate the approach. While results deviate from real-world data due to simplified assumptions, the tool successfully demonstrates how conceptual design decisions can be automated and iteratively refined.
 
