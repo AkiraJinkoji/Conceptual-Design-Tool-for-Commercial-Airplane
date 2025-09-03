@@ -7,6 +7,7 @@ As a benchmark, the **Airbus A320neo** is used to validate the approach. While r
 
 For detailed methodology, assumptions, and results, please refer to the full project report:  
 [Aircraft Design Project Report](Aircaft_Design_Project_Report.pdf)
+
 ---
 
 ## 2. Problem Description
